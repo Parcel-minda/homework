@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="gbk"/>
+<constant name="struts.devMode" value="true"/>
+<constant name="struts.objectFactory" value="spring"/>
+
+<package name="users" namespace="/users" extends="struts-default">
+<action name="users_*" class="usersAction" method="{1}">
+<result name="message">message.jsp</result>
+<result name="show_view">/main.jsp</result>
+</action>
+</package>
+</struts>    
